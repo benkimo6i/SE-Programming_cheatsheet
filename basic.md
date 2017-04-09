@@ -83,7 +83,22 @@ elephant.eat(); // This works
 elephant.fly(); // Error occurs since only Birds have fly() in its prototype
 ```
 
+## Using OOP, design a way to add cards from a deck of standard playing cards to your hand.
 
-## Use the MVC framework to describe how a person views his hand (5 cards) from a deck of 52 cards.
+We'll need to start with a blueprint(s) or Class(es) so we can create objects and methods.
 
-## What is object oriented programming?
+A good place to begin, is to figure out possible candidates for objects: game, player, hand, card, deck, suit, value. Out of these possible candidates we want to find ones that can be reused and are relative to the task at hand: **card, hand, deck**. These will be our classes. 
+
+Since we want to **add cards** from a **deck** to our **hand**, cards are relatively passive in this interaction, we can create methods like `dealCard()` for a Deck class or `addCard()` for our Hand Class.
+
+If we want to know what cards our hand consists of, a Card object will need instance variables to represent its value or suit. We'll also need methods like `getSuit()` and `getValue` so that it is possible to discover the suit and value from outside the class.
+
+## What is object oriented programming? Why do we use it?
+
+Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which are data structures that contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods.
+
+OOP says that bringing together data and its behaviour in a single location makes it easier to understand how a program works. OOP is good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone.
+
+Another type of programming paradigm is **Functional** programming. Functional programming is a programming paradigm, a style of building the structure and elements of computer programs, that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.
+
+FP says that data and behavior are distinctively different things and should be kept separate for clarity. Functional languages are good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone.
