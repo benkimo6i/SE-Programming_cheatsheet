@@ -99,6 +99,6 @@ Object-oriented programming (OOP) is a programming paradigm based on the concept
 
 OOP says that bringing together data and its behaviour in a single location makes it easier to understand how a program works. OOP is good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone.
 
-Another type of programming paradigm is **Functional** programming. Functional programming is a programming paradigm, a style of building the structure and elements of computer programs, that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.
+Another type of programming paradigm is **Functional** programming. Functional programming is a style of building the structure and elements of computer programs, that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data.
 
 FP says that data and behavior are distinctively different things and should be kept separate for clarity. Functional languages are good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone.

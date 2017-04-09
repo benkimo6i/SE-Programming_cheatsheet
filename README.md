@@ -4,11 +4,11 @@ Welcome all! This repo was built with the intent to be shared and to receive con
 
 ## What
 
-The name says it all, this is essentially a study guide/cheatsheet of sorts for anyone to refer to whether they would like to know more about software engineering/computer programming, have an interview coming up, or just want to make the world a better place.
+The name says it all, this is essentially a study guide/cheatsheet of sorts for anyone to refer to, whether they would like to know more about software engineering/computer programming, have an interview coming up, or just want to make the world a better place.
 
 ## Why
 
-After horribly bombing a software engineering interview and going through a depressive period where I questioned my ability and skills to work in this field, I decided I wasn't going to just sit around and let life knock me down anymore. I decided to never let myself be that ignorant and unprepared, so I started gathering some useful information that any developer, programmer, engineer should know but for one reason or another do not know. 
+After horribly bombing a software engineering interview I decided I wasn't going to ever let that happen again, so I started gathering common interview questions, explanations to basic concepts, and useful information so that no developer, programmer, engineer should go though what I went through. The goal is to build a simple starter kit for those new to software engineering/programming, or need to review for an interview. 
 
 ## How
 
@@ -16,8 +16,12 @@ I've organized this repo to be as simple as possible, that means each programmin
 
 If you are interested in contributing:
 
-1. Fork the repo
-2. Add your words of wisdom
-3. Submit new pull request
+1. Fork the repo.
+2. Add your words of wisdom.
+3. Submit new pull request.
+
+Need an interview question answered? 
+
+1. Open an issue.
 
 THANKS!
