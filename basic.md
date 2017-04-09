@@ -14,12 +14,15 @@ Methods are functions that belong to a class, functions can be on any other scop
 
 i.e.
 ```python
+# this is how a method works, declared inside a class
 class Door:
   def open(self):
   print 'hello stranger'
 ```
 
 ```python
+# this is how a function works, not declared inside a class
+# this function also calls the method we defined inside our class 
 def knock_door:
   a_door = Door()
   Door.open(a_door)
@@ -31,16 +34,55 @@ knock_door()
 
 Basically what it is, is a way to organize your code into logical groupings that keep the various pieces separate and easily modifiable.
 
-> Model = Data structure/data source. It's your database storage, it's the code needed to add/remove/update/change the information you warehouse.
+> Model = Data structure/data source. It's your database storage, it's the code needed to add/remove/update/change the information you warehouse - It acts as an interface between the database and the application (as a data object). It will handle validations, associations, transactions etc.
 
-> View = the part the user sees and interacts with. An HTML page, an application window.
+> View =  Displays output to the users - The part the user sees and interacts with. An HTML page, an application window. 
 
-> Controller = the code that marries the View to the Model. If you clicked a "Delete" button, it handles the business logic and rules (are you the authorized person to delete? is it a deletable record, etc).
+> Controller = The code that marries the View to the Model - It gathers and processes data. Handles code which does data selection and data messaging. If you clicked a "Delete" button, it handles the business logic and rules (are you the authorized person to delete? is it a deletable record, etc).
 
 i.e.
 MVC can be metaphorically related to a TV. You have various channels, with different information on them supplied by your cable provider (the model). The TV screen displays these channels to you (the view). You pressing the buttons on the remote controls affects what you see and how you see it (the controller).
 
 ## What is a Class? What is inheritance? 
+
+A class is like a blueprint which you use to create objects. An object is an instance of a class - it's a concrete 'thing' that you made using a specific class.
+
+i.e.
+- A class is like the blueprint for a house. Using this blueprint, you can build as many houses as you like.
+- Each house you build (or instantiate, in OO lingo) is an object, also known as an instance.
+- Each house also has an address, of course. If you want to tell someone where the house is, you give them a card with the address written on it. That card is the object's reference.
+
+Inheritance is the concept of one thing gaining the properties or behaviours of something else. To say A inherits from B, is saying that A is a type of B. A Bird inherits from Animal because a Bird is a type of Animal - it can do the same things, but a little more (or differently)!
+i.e.
+```javascript
+// This is the Animal *Type*
+function Animal() {};
+Animal.prototype.eat = function () {
+    alert("All animals can eat!");
+};
+```
+
+```javascript
+// Declaring a Bird *Type*
+function Bird() {};
+Bird.prototype = new Animal(); // Birds inherit from Animal
+Bird.prototype.fly = function() {
+    alert("Birds are special, they can fly!");
+};
+```
+
+```javascript
+// Create an instance of the Bird Type
+var woodpecker = new Bird();
+woodpecker.eat(); // This works because Bird inherits properties from Animal
+woodpecker.fly(); // This works an important part of how Bird is different to Animal
+
+// Let's check an instance of Animal now
+var elephant = new Animal();
+elephant.eat(); // This works
+elephant.fly(); // Error occurs since only Birds have fly() in its prototype
+```
+
 
 ## Use the MVC framework to describe how a person views his hand (5 cards) from a deck of 52 cards.
 
