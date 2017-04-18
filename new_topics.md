@@ -7,4 +7,5 @@
 
 - Recursion
 - Basic Algorithm Knowledge/Sorting
-
+- Different Data Structures
+- GET vs POST

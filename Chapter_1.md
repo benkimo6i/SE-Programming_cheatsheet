@@ -1,4 +1,8 @@
-# Software Engineering/Programming Cheatsheet
+# Topics
+- **Method vs Function**
+- **The MVC**
+- **Class, Inheritance**
+- **OOP & using it during an interview**
 
 ## What's the difference between a method and a function?
 
